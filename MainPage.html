@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Stakeholder Website</title>
+        <link rel="stylesheet" href="Style.css">
+        <script src="Main.Js"></script>
+        <meta name="description" content="Stakeholders website description">
+        <meta name="keywords" content="Stakeholders name, Teacher, Computer">
+        <meta name="author" content="Danny Cao">
+        <meta name="viewport" content="width=device-width, initial-scale-1.0">
+    </head>
+    <body>
+        <div id="Nav-Bar">
+            <a href="MainPage.html"><img src="Logo-Substitute.png" alt="logo"></a>
+            <a href="MainPage.html"><h1>NAME</h1></a>
+            <a href="MainPage.html"><h2>MENU</h2></a>
+            <button id="Menu-Button" popovertarget="OpenMenu"></button>
+        </div>
+        <div popover id="OpenMenu">
+            <a href="MainPage.html"><h3>Home</h3></a>
+            <a href="AdoptionPage.html"><h3>Adopt Now</h3></a>
+            <a href="ContactPage.html"><h3>Contact Us</h3></a>
+        </div>
+            <div id="Screen-Overlay"></div>
+        <script>
+                const overlay = document.getElementById("Screen-Overlay");
+                overlay.addEventListener("click", (e) => {overlay.style.opacity = "0"});
+                const popover = document.getElementById("Menu-Button")
+                popover.addEventListener("click", (e)  => {overlay.style.opacity = "0.75"});
+
+            </script>
+        <div id="Header">   
+
+        </div>
+        <!--Content-->
+        <div id="Footer">
+
+        </div>
+
+    </body>
+</html>

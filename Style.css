@@ -1,0 +1,74 @@
+body{
+    background-color: white;
+    height: 5500px;
+    max-width: 100%;
+    overflow-x: hidden;
+
+}
+
+#Nav-Bar{
+    background-color: #414288;
+    margin: -10px;
+    width: 1440px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 25px;
+    height: 150px;
+}
+
+#Nav-Bar img{
+    height: 115px;
+    width: 115px;
+    margin-left: 50px;
+}
+
+#Nav-Bar h1{
+    font-size: 35px;
+    color: white;
+
+}
+
+#Nav-Bar h2{
+    padding-left: 800px;
+    font-size: 35px;
+    color: white;
+    padding-right: 50px;
+}
+#OpenMenu{
+    width: 34%;
+    height: 100%;
+    border: none;
+    margin-left: 66%;
+    opacity: 0.67;
+    background-color: gray;
+
+}
+
+#Screen-Overlay{
+    background-color: black;
+    width: 67%;
+    height: 100%;
+    border: none;
+    margin-left: -10px;
+    margin-top: -500px;
+    opacity: 0;
+}
+
+#OpenMenu h3{
+    font-size: 30px;
+    margin-left: 30px;
+    margin-right: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+#Menu-Button{
+    background-color: dodgerblue;
+    border: none;
+    color: white;
+    padding: 7.5px 7.5px;
+    
+}
