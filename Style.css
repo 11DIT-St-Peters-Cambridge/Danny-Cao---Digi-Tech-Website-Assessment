@@ -3,6 +3,7 @@ body{
     height: 5500px;
     max-width: 100%;
     overflow-x: hidden;
+    font-family: Inter, sans-serif;
 
 }
 
@@ -70,13 +71,60 @@ a {
     background-color: dodgerblue;
     border: none;
     color: white;
-    padding: 7.5px 7.5px;
-
+    padding: 18px 18px;
+    background-image: url("Header-Image.jpg");
 }
 
 #Header img{
     height: 962px;
-    width: 110%;
+    width: 1443px;
     margin-left: -10px;
     margin-top: 10px;
+}
+
+#Header{
+    text-align: center;
+}
+
+#Header h1{
+    font-size: 75px;
+    color: black;
+    text-decoration-line: underline;
+    margin-top: -662px;
+    text-decoration-thickness: 10px;
+}
+
+#Header #Text-Box{
+    width: 33%;
+    margin-left: 33%;
+    margin-right: 33%;
+    margin-top: -10px;
+}
+
+#Header h2{
+    font-size: 25px;
+    color: black;
+
+}   
+
+#Adopt-Today{
+    border: none;
+    background-color: #D9D9D9;
+    color: black;
+    padding: 20px 100px;
+    font-size: 25px;
+    border-radius: 100px;
+    margin-right: 75px;
+    margin-top: 50px;
+}
+
+#Donate-Pet{
+    border: none;
+    background-color: #D9D9D9;
+    color: black;
+    padding: 20px 100px;
+    font-size: 25px;
+    border-radius: 100px;
+    margin-left: 75px;  
+    margin-top: 50px;
 }
