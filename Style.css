@@ -53,7 +53,8 @@ body{
     border: none;
     margin-left: -10px;
     margin-top: -138px;
-    opacity: 0;
+    opacity: 0.75;
+    display: none;
     position: fixed;
 }
 

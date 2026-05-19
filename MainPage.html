@@ -24,9 +24,9 @@
             <div id="Screen-Overlay"></div>
         <script>
                 const overlay = document.getElementById("Screen-Overlay");
-                overlay.addEventListener("click", (e) => {overlay.style.opacity = "0"});
+                overlay.addEventListener("click", (e) => {overlay.style.display = "none"});
                 const popover = document.getElementById("Menu-Button")
-                popover.addEventListener("click", (e)  => {overlay.style.opacity = "0.75"});
+                popover.addEventListener("click", (e)  => {overlay.style.display = "block"});
 
             </script>
         <div id="Header">   
@@ -35,8 +35,8 @@
             <div id="Text-Box">
                 <h2>Our organization helps you find a pet that you would love, with no trouble at all.</h2>
             </div>
-            <button id="Adopt-Today">Adopt Today</button>
-            <button id="Donate-Pet">Donate A Stray</button>
+            <button type="button" onclick="location.href='AdoptionPage.html'" id="Adopt-Today">Adopt Today</button>
+            <button type="button" onclick="location.href='AdoptionPage.html'" id="Donate-Pet">Donate A Stray</button>
         </div>
         <!--Content-->
         <div id="Footer">
