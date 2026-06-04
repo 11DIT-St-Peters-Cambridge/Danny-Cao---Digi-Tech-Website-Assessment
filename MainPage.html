@@ -20,6 +20,8 @@
             <a href="MainPage.html"><h3>Home</h3></a>
             <a href="AdoptionPage.html"><h3>Adopt Now</h3></a>
             <a href="ContactPage.html"><h3>Contact Us</h3></a>
+            <a href="Login.html"><h3>Login</h3></a>
+
         </div>
             <div id="Screen-Overlay"></div>
         <script>
@@ -29,7 +31,7 @@
                 popover.addEventListener("click", (e)  => {overlay.style.display = "block"});
 
             </script>
-        <div id="Header">   
+        <div id="Header">
             <img src="Header-Image.jpg" alt="Header-Image">
             <h1>Find A Pet Today</h1>
             <div id="Text-Box">
@@ -43,7 +45,35 @@
             <span id="Circle2" class="dot"></span>
             <span id="Circle3" class="dot"></span>
             <span id="Big-Circle" class="dot"></span>
-            <h2>HI</h2>
+        </div>
+        <div id="Preview">
+            <h1>Find your perfect pet, or help our longest staying residents</h1>
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                    <script>
+                    function myFunction() {
+                        document.getElementById("myDropdown").classList.toggle("show");
+                    }
+                    window.onclick = function(event) {
+                    if (!event.target.matches('.dropbtn')) {
+                        var dropdowns = document.getElementsByClassName("dropdown-content");
+                        var i;
+                        for (i = 0; i < dropdowns.length; i++) {
+                        var openDropdown = dropdowns[i];
+                        if (openDropdown.classList.contains('show')) {
+                            openDropdown.classList.remove('show');
+                        }
+                        }
+                    }
+                    }
+                    </script>
+                </div>
+            </div>
+        </div>
         </div>
         <!--Content-->
         <div id="Footer">
