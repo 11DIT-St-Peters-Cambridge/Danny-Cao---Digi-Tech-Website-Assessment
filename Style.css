@@ -201,13 +201,14 @@ a {
 
 }
 
-#Footer{
-    margin-bottom: 639px;
-    background-color: #414288;
-    height: 639px;
-    width: 100%;
-}
 
+#Preview h3{
+    margin-top: 300px;
+    font-size: 50px;
+    margin-left: 5%;
+    margin-right: 5%;
+
+}
 
 #Row1{
     margin-top: 160px;
@@ -257,4 +258,46 @@ a {
 
 #Bottom h1{
     padding: 25px;
+}
+
+#Events{
+    background-color: #414288;
+    height: 1120px;
+}
+
+#Footer{
+    margin-bottom: 639px;
+    background-color: white;
+    height: 639px;
+    width: 100%;
+}
+
+#Footer img{
+    width: 411px;
+    height: 411px;
+}
+
+#Footer{
+    font-size: 30px;
+    color: black;
+}
+
+#Footer h1{
+    color: black;
+    display:list-item;
+    margin-top: 100px;
+    width: 200px;
+}
+
+#Footer a{
+    color: black;
+    display:list-item;
+    margin-top: 100px;
+    width: 200px;
+}
+
+#Footer img{
+    margin-left: 100px;
+    margin-top: -100%;
+    margin-left: 65%;
 }
