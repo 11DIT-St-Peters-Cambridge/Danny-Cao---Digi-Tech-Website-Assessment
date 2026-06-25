@@ -6,42 +6,44 @@ body{
     overflow-x: hidden;
     font-family: Inter, sans-serif;
     align-items: center;
-    padding:0;
-    margin: 0px;
+    padding: 0%;
+    margin: 0%;
 }
 
-/* This styles the bar at the top. The disply flex and the justify content puts the links at the top in a row, evenly*/
+/* This styles the bar at the top. The disply flex and the justify content puts the links at the top in a row, evenly
+For the gap, I only multiplied it by 20vw. This means it is only multiplied by 20% of the screen.
+This is because there are 5 gaps in total, so it needs to be spread out.*/
 #Nav-Bar{
     background-color: #414288;
-    width: 1440px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    gap: 25px;
-    height: 170px;
-    margin: 0px;
+    gap: calc(25/1440*20vw);
+    height: calc(170/1440*100vw);
+    margin: 0%;
 }
 
 /* This styles the red substitute logo at the top */
 #Nav-Bar img{
-    height: 115px;
-    width: 115px;
+    height: calc(115/1440*100vw);
+    width: calc(115/1440*100vw);
     margin-left: 50px;
 }
 
 /* This makes sure the NAME at the top of the nav bar is a good size and colour */
 #Nav-Bar h1{
-    font-size: 35px;
+    font-size: calc(35/1440*100vw);
     color: white;
 
 }
 
 /* This makes sure there is a big gap between the MENU and NAME */
 #Nav-Bar h2{
-    padding-left: 800px;
-    font-size: 35px;
+    padding-left: calc(800/1440*100vw);
+    font-size: calc(35/1440*100vw);
     color: white;
-    padding-right: 50px;
+    padding-right: calc(50/1440*100vw);
 }
 
 /* This makes sure the white menu that pops up when you click the grid button is a little bit transparent. It also makes sure it's on the right side so it makes it more comfortable for viewers to read*/
@@ -69,7 +71,7 @@ will push it down usually.*/
     display: none;
     position: fixed;
     z-index: 999;
-    margin-top: -170px;
+    margin-top: calc(-170/1440*100vw);
 }
 
 /* This changes the links inside of the menu that opens up. This makes sure the opacity is correct
@@ -77,8 +79,8 @@ and the color looks good. It also makes sure it isn't too close to the left, as 
 #OpenMenu a{
     opacity: 1;
     color: black;
-    font-size: 30px;
-    margin-left: 30px;
+    font-size: calc(30/1440*100vw);
+    margin-left: calc(30/1440*100vw);
     margin-right: 0px;
 }
 
@@ -92,30 +94,30 @@ This makes the colour and size correct*/
 #Menu-Button{
     border: none;
     color: white;
-    padding: 18px 18px;
+    padding: calc(18/1440*100vw) calc(18/1440*100vw);
     background-image: url("Header-Image.jpg");
 }
 
 /* This is the big banner in the header. It makes sure the size is correct */
 #Header img{
-    height: 983px;
+    height: calc(983/1440*100vw);
     width: 100%;
 }
 
 /* This makes sure that the items in the header are all centered*/
 #Header{
     text-align: center;
-    height: 983px;
+    height: calc(983/1440*100vw);
 }
 
 /*This is the big title in the header. This makes sure that the size and colour is right
 but it also makes sure that there is an underline.*/
 #Header h1{
-    font-size: 75px;
+    font-size: calc(75/1440*100vw);
     color: black;
     text-decoration-line: underline;
-    margin-top: -662px;
-    text-decoration-thickness: 10px;
+    margin-top: calc(-662/1440*100vw);
+    text-decoration-thickness: calc(10/1440*100vw);
 }
 
 /* This is the text underneath the title in the header. It just makes sure that it is perfectly in the middle.*/
@@ -127,7 +129,7 @@ but it also makes sure that there is an underline.*/
 
 /* This is the text inside of the text-box*/
 #Header h2{
-    font-size: 25px;
+    font-size: calc(25/1440*100vw);
     color: black;
 
 }   
@@ -139,11 +141,11 @@ I also used it to make sure that it was bigger and curved the corners.*/
     border: none;
     background-color: #D9D9D9;
     color: black;
-    padding: 20px 100px;
-    font-size: 25px;
-    border-radius: 100px;
-    margin-right: 75px;
-    margin-top: 50px;
+    padding: calc(20/1440*100vw) calc(100/1440*100vw);
+    font-size: calc(25/1440*100vw);
+    border-radius: calc(100/1440*100vw);
+    margin-right: calc(75/1440*100vw);
+    margin-top: calc(50/1440*100vw);
 }
 
 /* This is on the other side of the adopt-button. It is an identical button*/
@@ -151,11 +153,11 @@ I also used it to make sure that it was bigger and curved the corners.*/
     border: none;
     background-color: #D9D9D9;
     color: black;
-    padding: 20px 100px;
-    font-size: 25px;
-    border-radius: 100px;
-    margin-left: 75px;  
-    margin-top: 50px;
+    padding: calc(25/1440*100vw) calc(100/1440*100vw);
+    font-size: calc(25/1440*100vw);
+    border-radius: calc(100/1440*100vw);
+    margin-left: calc(75/1440*100vw);  
+    margin-top: calc(50/1440*100vw);
 }
 
 /* This is the button on the adoption page. It scrolls you down so that you don't have to manually scroll all the way down
@@ -164,16 +166,16 @@ This also makes sure the style is similar to the other buttons on the main page 
     border: none;
     background-color: #D9D9D9;
     color: black;
-    padding: 20px 100px;
-    font-size: 25px;
-    border-radius: 100px;
-    margin-top: 50px;
+    padding: calc(20/1440*100vw) calc(100/1440*100vw);
+    font-size: calc(25/1440*100vw);
+    border-radius: calc(100/1440*100vw);
+    margin-top: calc(50/1440*100vw);
 }
 
 /* This is the div that contains the paw print. This makes sure that the size is correct and that the colour is right.*/
 #Stats{
     background-color: #414288;
-    height: 1114px;
+    height: calc(1114/1440*100vw);
     width: 100%;   
     text-align: left;
     position: relative;
@@ -181,8 +183,8 @@ This also makes sure the style is similar to the other buttons on the main page 
 
 /* These are the circles that make up the paw print. This makes sure that they are the right size and colour. The border radius also makes sure that they are curved*/
 .dot{
-    height: 276px;
-    width: 276px;
+    height: calc(276/1440*100vw);
+    width: calc(276/1440*100vw);
     background-color: #D9D9D9;
     border-radius: 100%;
   
@@ -191,8 +193,8 @@ This also makes sure the style is similar to the other buttons on the main page 
 /* This is the very left circle. This makes sure the position is in the right spot by using absolute position and block.*/
 #Circle1{
     float: left;
-    left: 250px;
-    top: 309px;
+    left: calc(250/1440*100vw);
+    top: calc(309/1440*100vw);
     display: block;
     position: absolute;
 
@@ -201,8 +203,8 @@ This also makes sure the style is similar to the other buttons on the main page 
 /* This is the middle circle. The calc makes sure that it is perfectly in the center.*/
 #Circle2{
     float: left;
-    top: 138px;
-    left: calc(50% - 138px);
+    top: calc(138/1440*100vw);
+    left: calc(calc(720 - 138)/1440*100vw);
     display: block;
     position: absolute;
  
@@ -211,8 +213,8 @@ This also makes sure the style is similar to the other buttons on the main page 
 /* This is the very right circle.*/
 #Circle3{
     float: right;
-    right: 250px;
-    top: 309px;
+    right: calc(250/1440*100vw);
+    top: calc(309/1440*100vw);
     display: block;
     position: absolute;
 
@@ -221,18 +223,18 @@ This also makes sure the style is similar to the other buttons on the main page 
 /* This is the biggest circle in the middle. This makes sure that it is perfectly in the middle, and that the position is accurate.*/
 #Big-Circle{
     float: left;
-    height: 521px;
-    width: 521px;
-    top: 509px;
+    height: calc(521/1440*100vw);
+    width: calc(521/1440*100vw);
+    top: calc(509/1440*100vw);
     display: block;
     position: absolute;
-    left: calc(50% - 260.5px);
+    left: calc(calc(720 - 260.5)/1440*100vw);
 } 
 
 /* This is where you get to preview pets to adopt. This is the div that contains the pet cards. It makes sure that the size is right and that the background colour is good.*/
 #Preview{
     width: 100%;
-    height: 1568px;
+    height: calc(1568/1440*100vw);
     background-color: white;
     text-align: center;
 }
@@ -240,37 +242,37 @@ This also makes sure the style is similar to the other buttons on the main page 
 /* This is the preview part, but on the adoption page. This needed to be taller so that it could fit more pet cards.*/
 #Adopt{
     width: 100%;
-    height: 2928px;
+    height: calc(2928/1440*100vw);
     background-color: white;
     text-align: center;
 }
 
 /* This is the text at the top of the preview, before the pet cards. It makes sure it is the right size and right position.*/
 #Preview h2{
-    margin-top: 127px;
-    font-size: 25px;
+    margin-top: calc(127/1440*100vw);
+    font-size: calc(25/1440*100vw);
 }
 
 /* This is the big paragraph at the bottom. The margin-left and right makes sure that
 there is a gap in the left and right so that it doesn't touch the sides. This makes 
 it look much more visually pleasing.*/
 #Preview h3{
-    margin-top: 300px;
-    font-size: 50px;
+    margin-top: calc(300/1440*100vw);
+    font-size: calc(50/1440*100vw);
     margin-left: 5%;
     margin-right: 5%;
 }
 
 /* This is identical to preview h2 but on the adopt page.*/
 #Adopt h2{
-    margin-top: 127px;
-    font-size: 25px;
+    margin-top: calc(127/1440*100vw);
+    font-size: calc(25/1440*100vw);
 }
 
 /* This is identical to preview h3 but on the adopt page.*/
 #Adopt h3{
-    margin-top: 300px;
-    font-size: 50px;
+    margin-top: calc(300/1440*100vw);
+    font-size: calc(50/1440*100vw);
     margin-left: 5%;
     margin-right: 5%;
 }
@@ -278,9 +280,9 @@ it look much more visually pleasing.*/
 /* This is the big div that contains 3 pet cards. The padding is used to make sure that there is a gap before another row of pet cards.
 The height is used to match up with the pet cards.*/
 #Row-Container{
-    padding-top: 160px;
+    padding-top: calc(160/1440*100vw);
     width: 100%;
-    height: 600px;
+    height: calc(600/1440*100vw);
     display: block;
 }
 
@@ -291,8 +293,8 @@ This also makes sure that the size of the pet cards are correct.*/
     margin-left: 0px;
     display: inline-block;
     width: 33%;
-    height: 600px;
-    width: 350px;
+    height: calc(600/1440*100vw);
+    width: calc(350/1440*100vw);
     background-color: #D9D9D9;
 }
 
@@ -301,11 +303,11 @@ This makes it easier for the viewers to read as there is a gap between each card
 The display: inline-block; makes sure that the three cards will be in a line at the same y level.
 This also makes sure that the size of the pet cards are correct.*/
 #Pet-Card2{
-    margin-left: 85px;
+    margin-left: calc(85/1440*100vw);
     display: inline-block;
     width: 33%;
-    height: 600px;
-    width: 350px;
+    height: calc(600/1440*100vw);
+    width: calc(360/1440*100vw);
     background-color: #D9D9D9;
 }
 
@@ -314,34 +316,34 @@ This makes it easier for the viewers to read as there is a gap between each card
 The display: inline-block; makes sure that the three cards will be in a line at the same y level.
 This also makes sure that the size of the pet cards are correct.*/
 #Pet-Card3{
-    margin-left: 85px;
+    margin-left: calc(85/1440*100vw);
     display: inline-block;
     width: 33%;
-    height: 600px;
-    width: 350px;
+    height: calc(600/1440*100vw);
+    width: calc(350/1440*100vw);
     background-color: #D9D9D9;
 }
 
 /* This is the top half of the pet card. This contains an image so that the viewer is able to 
 identify the pet before they contact for more information. This just ensures that this is the right size.*/
 #Top img{
-    width: 350px;
+    width: calc(350/1440*100vw);
     height: 50%;
 }
 
 /* This is the bottom half of the pet card. This just makes sure that the size of the text inside is correct.
 It also makes sure that the whole card is the right size and that the colour looks nice. */
 #Bottom{
-    font-size: 12.5px;
+    font-size: calc(12.5/1440*100vw);
     color: white;
-    width: 350px;
+    width: calc(350/1440*100vw);
     height: 50%;
     background-color:#414288;
 }
 
 /* This just makes sure that there is a gap between the image and the text.*/
 #Bottom h1{
-    padding: 25px;
+    padding: calc(25/1440*100vw);
 }
 
 /* This is the top half of the event card. It makes sure that it is the right size.*/
@@ -353,6 +355,8 @@ It also makes sure that the whole card is the right size and that the colour loo
 
 /* This is the text in the top of the event. This is a placeholder for the news image.*/
 #Top-Event h1{
+    margin: 0%;
+    font-size: calc(25/1440*100vw);
     padding-top: 50%;
 }
 
@@ -363,11 +367,18 @@ that it is exactly half of the card and that the colour is visible.*/
     height: 50%;
 }
 
+#Bottom-Event h1{
+    margin: 0%;
+    font-size: calc(25/1440*100vw);
+    padding-top: 50%;
+}
+
+
 /* This is the div that contains all of the event cards. This just makes sure that the colour
 and size are correct.*/
 #Events{
     background-color: #414288;
-    height: 1120px;
+    height: calc(1120/1440*100vw);
     width: 100%;
     text-align: center;
 }
@@ -376,20 +387,20 @@ and size are correct.*/
 and the colour is correct.*/
 #Footer{
     background-color: white;
-    height: 639px;
+    height: calc(639/1440*100vw);
     width: 100%;
 }
 
 /* This is the logo at the bottom right of the footer. This is just used to make sure that it sits in the bottom right
 correctly.*/
 #Footer img{
-    width: 411px;
-    height: 411px;
+    width: calc(411/1440*100vw);
+    height: calc(411/1440*100vw);
 }
 
 /* This is just used to make sure that all of the text inside of the footer will have the correct size and colour*/
 #Footer{
-    font-size: 30px;
+    font-size: calc(30/1440*100vw);
     color: black;
     
 }
@@ -399,16 +410,16 @@ It also makes sure that there is a gap between each list item. */
 #Footer h1{
     color: black;
     display:list-item;
-    margin-top: 100px;
-    width: 200px;
+    margin-top: calc(100/1440*100vw);
+    width: calc(200/1440*100vw);
 }
 
 /* This styles all of the links inside of the footer. It makes sure that the gaps are identical to the title.*/
 #Footer a{
     color: black;
     display:list-item;
-    margin-top: 100px;
-    width: 200px;
+    margin-top: calc(100/1440*100vw);
+    width: calc(200/1440*100vw);
 }
 
 /* This just makes sure that the image will properly sit in the bottom right corner. */
@@ -422,29 +433,29 @@ This means I can use the align-items to center the box in the middle.*/
 #Contact-Hold{
     margin-left: auto;
     margin-right: auto;
-    width: 1111px;
-    margin-top: 152px;
+    width: calc(1111/1440*100vw);
+    margin-top: calc(152/1440*100vw);
     align-items: center;
 }
 
 /* This is just used to make sure that there is a gap between all of the inquiry boxes so that the viewers 
 can find it easier to distinguish which paragraph is for which image.*/
 #Inquiries{
-    margin-top: 96px;
+    margin-top: calc(96/1440*100vw);
 }
 
 /* This just makes sure that the image in the top half of the inquiries box is the right size.*/
 #Inquiries-Top img{
-    width: 1111px;
-    height: 449px;
+    width: calc(1111/1440*100vw);
+    height: calc(449/1440*100vw);
     background-color: #D9D9D9;
 }
 
 /* This just makes sure that the text in the bottom half of the events box is the right size.*/
 #Inquiries-Bottom h1{
     text-align: center;
-    font-size: 25px;
-    height: 449px;
-    width: 1111px;
+    font-size: calc(25/1440*100vw);
+    height: calc(499/1440*100vw);
+    width: calc(1111/1440*100vw);
     background-color: #414288;
 }
