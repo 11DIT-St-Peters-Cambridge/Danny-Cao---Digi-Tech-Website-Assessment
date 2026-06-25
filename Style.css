@@ -1,6 +1,6 @@
 body{
     background-color: white;
-    height: 5500px;
+    height: auto;
     max-width: 100%;
     overflow-x: hidden;
     font-family: Inter, sans-serif;
@@ -134,6 +134,16 @@ a {
     margin-top: 50px;
 }
 
+#Scroll-Down{
+    border: none;
+    background-color: #D9D9D9;
+    color: black;
+    padding: 20px 100px;
+    font-size: 25px;
+    border-radius: 100px;
+    margin-top: 50px;
+}
+
 #Stats{
     background-color: #414288;
     height: 1114px;
@@ -194,10 +204,16 @@ a {
     text-align: center;
 }
 
+#Adopt{
+    width: 100%;
+    height: 2928px;
+    background-color: white;
+    text-align: center;
+}
+
 #Preview h2{
     margin-top: 127px;
     font-size: 25px;
-
 }
 
 
@@ -206,7 +222,19 @@ a {
     font-size: 50px;
     margin-left: 5%;
     margin-right: 5%;
+}
 
+#Adopt h2{
+    margin-top: 127px;
+    font-size: 25px;
+}
+
+
+#Adopt h3{
+    margin-top: 300px;
+    font-size: 50px;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 #Row-Container{
@@ -282,7 +310,6 @@ a {
 }
 
 #Footer{
-    margin-bottom: 639px;
     background-color: white;
     height: 639px;
     width: 100%;
@@ -316,4 +343,30 @@ a {
     margin-left: 100px;
     margin-top: -100%;
     margin-left: 65%;
+}
+
+#Contact-Hold{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1111px;
+    margin-top: 152px;
+    align-items: center;
+}
+
+#Inquiries{
+    margin-top: 96px;
+}
+
+#Inquiries-Top img{
+    width: 1111px;
+    height: 449px;
+    background-color: #D9D9D9;
+}
+
+#Inquiries-Bottom h1{
+    text-align: center;
+    font-size: 25px;
+    height: 449px;
+    width: 1111px;
+    background-color: #414288;
 }
